@@ -1,0 +1,32 @@
+<div class='row'>
+  <h1 class='contentTitle col-md-8'> Contact </h1>
+</div>
+
+<div class='row'>
+  <form name='contactForm' ng-submit='sendEmail()' class='col-md-6 col-md-offset-3'>
+    <div class='form-group'>
+      <input type='text' class='contactElement' ng-model='contact.name' placeholder='Name' required>
+      <input type='email' class='contactElement' ng-model='contact.email' placeholder='Your Email' required>
+      <input type='text' class='contactElement' ng-model='contact.title' placeholder='Subject Title' required>
+      <textarea class='contactElement' ng-model='contact.message' rows='6' placeholder='Message...' required></textarea>
+    </div>
+    <div class='form-group'>
+      <button type='submit' class='contactElement'>Send Email</button>
+    </div>
+  </form>
+</div>
+
+<div id='contact-info' class='row'>
+  <div class='col-md-4 col-md-offset-2'>
+    <p>
+      (562) 310-8719<br>
+      aidashabani@yahoo.com
+    </p>
+  </div>
+  <div class='col-md-4 col-md-offset-1'>
+    <p>
+      2967 Randolph Ave, Unit C<br>
+      Costa Mesa, CA 92626
+    </p>
+  </div>
+</div>

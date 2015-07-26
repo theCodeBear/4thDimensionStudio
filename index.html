@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>4th Dimension Studio</title>
+  <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='bower_components/font-awesome/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='styles.css'>
+  <script src='bower_components/angular/angular.min.js'></script>
+</head>
+<body ng-app='4thDimension'>
+  
+  <nav id='sidebar' class='col-md-3' ng-controller='NavCtrl'>
+    <span class='title'>
+      <span id='title'>4th Dimension Studio</span><br>
+      <span id='titleAmpersand'>&</span>
+      <span id='subTitle'>Art Classes</span>
+    </span>
+
+    <ul id='menu' class='list-group'>
+
+      <li class='list-group-item' ng-click='closeSubMenus()' ui-sref='home'>
+        <i class="fa fa-info-circle col-md-2"></i>
+        Home
+      </li>
+
+      <li class='list-group-item' ng-click='closeSubMenus()' ui-sref='classes'>
+        <i class="fa fa-graduation-cap col-md-2"></i>
+        Classes
+      </li>
+
+      <li class='list-group-item' ng-click='toggleSubMenu("openPaintingsMenu")' ui-sref='paintingsMurals'>
+        <i class="fa fa-paint-brush col-md-2"></i>
+        Paintings/Murals
+      <!-- paintings/murals submenu -->
+      <li ng-if='subMenus.openPaintingsMenu' ng-cloak>
+        <ul class='subList' class='list-group'>
+          <li class='list-group-item' ui-sref='paintings'> Paintings </li>
+          <li class='list-group-item' ui-sref='murals'> Murals </li>
+        </ul>
+      </li>
+      </li>
+
+      <li class='list-group-item' ng-click='toggleSubMenu("openGraphicsMenu")' ui-sref='graphicsIllustrations'>
+        <i class="fa fa-file-image-o col-md-2"></i>
+        Graphic Design
+      </li>
+      <!-- graphics/illustrations submenu -->
+      <li ng-if='subMenus.openGraphicsMenu' ng-cloak>
+        <ul class='subList' class='list-group'>
+          <li class='list-group-item' ui-sref='graphics'> Graphics </li>
+          <li class='list-group-item' ui-sref='illustrations'> Illustrations </li>
+        </ul>
+      </li>
+
+      <li class='list-group-item' ng-click='toggleSubMenu("openEventsMenu")' ui-sref='events'>
+        <i class="fa fa-calendar-o col-md-2"></i>
+        Events
+      </li>
+      <!-- events submenu -->
+      <li ng-if='subMenus.openEventsMenu' ng-cloak>
+        <ul class='subList' class='list-group'>
+          <li class='list-group-item' ui-sref='workshops'> Workshops </li>
+          <li class='list-group-item' ui-sref='figureDrawing'> Figure Drawing </li>
+        </ul>
+      </li>
+
+      <li class='list-group-item' ng-click='closeSubMenus()' ui-sref='contact'>
+        <i class="fa fa-envelope-o col-md-2"></i>
+        Contact
+      </li>
+
+    </ul>
+  </nav>
+
+  <div id='mainContent' ui-view class='col-md-9 col-md-offset-3'></div>
+
+  <script src='bower_components/angular-ui-router/release/angular-ui-router.min.js'></script>
+  <script src='bower_components/jquery/dist/jquery.min.js'></script>
+  <script src='bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+  <script src='routes.js'></script>
+  <script src='views/contact/contact.controller.js'></script>
+  <script src='nav.controller.js'></script>
+</body>
+</html>

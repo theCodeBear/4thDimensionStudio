@@ -1,0 +1,120 @@
+#sidebar {
+  background-color: black;
+  display: inline-block;
+  height: 100vh;
+  color: white;
+  padding: 0;
+  padding-left: 20px;
+  position: fixed;
+}
+
+#mainContent {
+  font-size: 1.3em;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  margin: 0;
+  padding: 0;
+}
+
+#titleAmpersand {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  font-family: copperplate;
+  line-height: 0em;
+}
+
+#subTitle {
+  padding: 0;
+  margin: 0;
+}
+
+#menu {
+  margin-top: 3em;
+  font-size: 1.7em;
+  margin-left: -20px;
+  font-weight: 100;
+}
+
+#menu .list-group-item {
+  background-color: black;
+  color: white;
+  border-radius: 0;
+  border: none;
+  padding: 10px 20px 10px 10px;
+  cursor: pointer;
+}
+
+#menu .list-group-item:hover {
+  background-color: #EEE;
+  color: black;
+}
+
+.contentTitle {
+  border-bottom: 1px solid gray;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+}
+
+i {
+  margin-right: 1em;
+}
+
+.contactElement {
+  width: 100%;
+  margin-bottom: 1em;
+  border: none;
+}
+
+form[name='contactForm'] {
+  margin-bottom: 5em;
+}
+
+form[name='contactForm'] input {
+  border: none;
+  border-bottom: 1px solid #CCC;
+}
+
+form[name='contactForm'] input:focus {
+  outline: none;
+}
+
+form[name='contactForm'] textarea:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: darkgray;
+}
+
+textarea {
+  resize: none;
+}
+
+#contact-info {
+  font-weight: 200;
+}
+
+#menu .subList {
+  background-color: black;
+  color: white;
+  padding: 0;
+}
+
+#menu .subList li.list-group-item {
+  font-size: 0.7em;
+  padding: 5px 0px 5px 100px;
+}
