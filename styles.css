@@ -12,6 +12,11 @@
   font-size: 1.3em;
 }
 
+p {
+  font-family: 'Gill Sans';
+  /*font-family: 'Minion Pro';*/
+}
+
 .title {
   font-size: 2em;
   font-weight: 100;
@@ -63,6 +68,7 @@
   border-bottom: 1px solid gray;
   margin-bottom: 1em;
   padding-bottom: 0.5em;
+  font-weight: 200;
 }
 
 i {
@@ -73,6 +79,24 @@ i {
   width: 100%;
   margin-bottom: 1em;
   border: none;
+}
+
+button.contactElement {
+  font-size: 2em;
+  font-weight: 100;
+  /*border-radius: 5px;*/
+  border: 1px solid darkgray;
+}
+
+button.contactElement:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+button.contactElement:active {
+  background-color: #555;
+  color: white;
 }
 
 form[name='contactForm'] {
@@ -96,10 +120,6 @@ button:focus {
   outline: none;
 }
 
-button:active {
-  background-color: darkgray;
-}
-
 textarea {
   resize: none;
 }
@@ -118,3 +138,34 @@ textarea {
   font-size: 0.7em;
   padding: 5px 0px 5px 100px;
 }
+
+.carousel {
+  /*background-color: black;*/
+}
+
+.carousel-image {
+  margin: 0 auto;
+  min-height: 400px;
+  max-height: 800px;
+  max-width: 500px;
+}
+
+.slick-prev, .slick-next {
+  color: black;
+  background-color: transparent;
+  border: none;
+  font-size: 3em;
+  font-weight: 100;
+  position: absolute;
+  bottom: 35%;
+}
+
+.slick-prev {
+  left: 10%;
+}
+
+.slick-next {
+  right: 10%;
+}
+
+

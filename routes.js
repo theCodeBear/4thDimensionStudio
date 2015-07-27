@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('4thDimension', ['ui.router'])
+angular.module('4thDimension', ['ui.router', 'slick'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -25,7 +25,8 @@ angular.module('4thDimension', ['ui.router'])
 
   .state('paintings', {
     url: '/paintings',
-    templateUrl: 'views/paintings/paintings.html'
+    templateUrl: 'views/paintings/paintings.html',
+    controller: 'PaintingsCtrl'
   })
 
   .state('murals', {
